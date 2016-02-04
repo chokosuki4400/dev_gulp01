@@ -1,0 +1,26 @@
+/* main
+-----------------------------------*/
+
+h1 {
+	// @include sprite($sprite_1000_straight);
+	@include fontsize(20);
+}
+
+.top_header_heding {
+
+	@include respond(xs) {
+		padding: 10px 0;
+		width: percentage(610/640);
+		margin: 0 auto;
+	}
+
+	@include respond(md) {
+		padding: 10px 0;
+		width: percentage(610/640);
+
+		.navi_lang_list {
+			top: 26px;
+		}
+	}
+}
+
